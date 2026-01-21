@@ -1,6 +1,9 @@
 ﻿namespace EcoParkAnimalManagementSystem
 {
-    internal class Gendertype
+    public enum GenderType
     {
+        Unknown,
+        Male,
+        Female 
     }
 }

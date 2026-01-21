@@ -5,5 +5,6 @@
     Reptile,
     Amphibian,
     Fish,
-    Invertebrate
+    Invertebrate, 
+    Unknown
 }

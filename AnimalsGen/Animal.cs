@@ -3,7 +3,7 @@ using System;
 namespace EcoParkAnimalManagementSystem.AnimalsGen;
 
 //base class - not to be instatiated
-abstract class Animal
+public abstract class Animal
 {
     private string name;
     private int age; 
@@ -15,8 +15,8 @@ abstract class Animal
     {
         name = string.Empty;
         age = 0; // Fix: assign a default integer value
-        gender = new GenderType(); // Fix: assign a default instance
-        category = new CategoryType(); // Fix: assign a default instance
+        gender = GenderType.Unknown; // Fix: assign a default value
+        category = CategoryType.Unknown; // Fix: assign a default instance
     }
 
     public string Name
