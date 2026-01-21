@@ -15,7 +15,7 @@ public abstract class Animal
     {
         name = string.Empty;
         age = 0; // Fix: assign a default integer value
-        gender = GenderType.Unknown; // Fix: assign a default value
+        gender = GenderType.Unknown;  
         category = CategoryType.Unknown; // Fix: assign a default instance
     }
 
@@ -38,6 +38,7 @@ public abstract class Animal
     public CategoryType Category
     {
         get { return category; }
+       // set { category = value; }
         set { category = value; }
     }
 
@@ -47,6 +48,3 @@ public abstract class Animal
     }
 }
 
-public class GenderType
-{
-}
