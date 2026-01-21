@@ -2,18 +2,20 @@ using System;
 
 namespace EcoParkAnimalManagementSystem.AnimalsGen;
 
-public class Animal
+//base class - not to be instatiated
+abstract class Animal
 {
     private string name;
     private int age; 
-    private Gendertype gender;
+    private GenderType gender;
     private CategoryType category;
 
-    public Animal()
+    //to prohibit creating new Animal
+    protected Animal()
     {
         name = string.Empty;
         age = 0; // Fix: assign a default integer value
-        gender = new Gendertype(); // Fix: assign a default instance
+        gender = new GenderType(); // Fix: assign a default instance
         category = new CategoryType(); // Fix: assign a default instance
     }
 
@@ -28,7 +30,7 @@ public class Animal
         set { age = value; }
     }
 
-    public Gendertype Gender
+    public GenderType Gender
     {
         get { return gender; }
         set { gender = value; }
@@ -45,6 +47,6 @@ public class Animal
     }
 }
 
-public class Gendertype
+public class GenderType
 {
 }
