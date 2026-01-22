@@ -11,6 +11,15 @@ namespace EcoParkAnimalManagementSystem.Mammals.Species
             Age = 1;
             Gender = GenderType.Male;
         }
+
+        public override string ToString()
+        {
+            //base.ToString calls the parent class Mammal ToString( is called) method
+            
+     
+            return $"Dog -> {base.ToString()}";
+        
+    }
     }
 }
  
