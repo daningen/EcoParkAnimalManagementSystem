@@ -4,13 +4,14 @@ using System.Text;
 
 namespace EcoParkAnimalManagementSystem.Mammals.Species
 {
-    public class Dog : Mammal
+    internal class Cat : Mammal
     {
-        public Dog() {
-            Name = "Kalle";
-            Age = 1;
+        public Cat() {
+            Name = "Olle";
+            Age = 2;
             Gender = GenderType.Male;
+
+
         }
     }
 }
- 

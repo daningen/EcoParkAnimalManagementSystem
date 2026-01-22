@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EcoParkAnimalManagementSystem
 {
-   //inherit Animal
+   //inherits Animal
    public class Mammal : Animal
     {
         private CategoryType CategoryType;
@@ -14,5 +14,12 @@ namespace EcoParkAnimalManagementSystem
         CategoryType = CategoryType.Mammal;
 
         }
-    }
+        public override string ToString()
+        {
+            //base.ToString calls the parent class Animal ToString( is called) method
+            //Category is added here in Mammal class from default CategoryType set in Mammal constructor
+            return $"{base.ToString()}, Category: {CategoryType}";
+        }
+
+    } 
 }
