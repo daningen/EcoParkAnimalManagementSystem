@@ -12,11 +12,12 @@ public abstract class Animal
 
     //to prohibit creating new Animal
     protected Animal()
+
     {
         name = string.Empty;
-        age = 0; // Fix: assign a default integer value
+        age = 0;  
         gender = GenderType.Unknown;  
-        category = CategoryType.Unknown; // Fix: assign a default instance
+        category = CategoryType.Unknown;  
     }
 
     public string Name
