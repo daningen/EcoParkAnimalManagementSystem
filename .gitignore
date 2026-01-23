@@ -1,11 +1,60 @@
-# Visual Studio
-.vs/
-
-# Build output
+# =========================
+# .NET / Visual Studio
+# =========================
 bin/
 obj/
-
-# User-specific files
 *.user
 *.suo
 *.cache
+*.log
+.vs/
+
+# =========================
+# Build outputs
+# =========================
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# =========================
+# Rider / VS Code
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# OS-specific
+# =========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# .NET tooling
+# =========================
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# =========================
+# Logs / temp
+# =========================
+*.tmp
+*.bak
+*.old
+
+# =========================
+# Optional: user secrets / local config
+# =========================
+secrets.json
+appsettings.Development.json
+
