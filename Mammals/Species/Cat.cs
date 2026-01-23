@@ -13,5 +13,9 @@ namespace EcoParkAnimalManagementSystem.Mammals.Species
 
 
         }
+        public override string ToString()
+        {
+            return $"Cat -> {base.ToString()}";
+        }
     }
 }
