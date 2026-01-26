@@ -13,4 +13,8 @@
     <Folder Include="Reptiles\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EcoParkAnimalManagementSystem.GUI\EcoParkAnimalManagementSystem.GUI.csproj" />
+  </ItemGroup>
+
 </Project>

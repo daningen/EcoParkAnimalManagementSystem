@@ -21,7 +21,7 @@ namespace EcoParkAnimalManagementSystem
             animal = new Dog();
             //dynamic binding, Dog.ToString is called via Animal reference
             Console.WriteLine(animal +  " hej");
-            Console.WriteLine("heja DDDDD");
+            Console.WriteLine("heja DDDDDY");
 
 
         }
